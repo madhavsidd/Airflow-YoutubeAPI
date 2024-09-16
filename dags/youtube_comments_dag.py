@@ -26,7 +26,7 @@ dag = DAG(
 
 # Define the tasks
 def extract_comments_task(**kwargs):
-    api_key = "AIzaSyBoWZi2jsQNO5mZZlSk8cyHPVpgZP3jgho"  # Replace with your YouTube API key
+    api_key = ""  # Replace with your YouTube API key
     video_id = "OLXkGB7krGo"  # Replace with the YouTube video ID
     comments = extract_comments(api_key, video_id)
     kwargs['ti'].xcom_push(key='comments', value=comments)
