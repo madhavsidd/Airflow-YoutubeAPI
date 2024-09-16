@@ -1,0 +1,284 @@
+author,comment,published_at
+@christophercampo9099,"Thank you, thank you THANK YOU!  This was so helpful, easy to follow and made perfect sense.",2024-09-14T20:58:56Z
+@abderrahmanehamim6692,Thank you very much,2024-09-14T03:21:11Z
+@GarrettSchwarzenbach-u9v,Roberts Isle,2024-09-10T01:06:45Z
+@MarionWilliams-m7x,Brown Gary Martinez Dorothy Garcia James,2024-09-04T08:44:04Z
+@corbanb,Jay! Thanks for the video and content very cool to see. Curious why Airflow over something like FiveTran besides the ability to self host? Any gotchas?,2024-08-28T16:25:45Z
+@uppinder,26:00 item_discount_amount is supposed to be negative because the macro defined it as such. I also checked the data on snowflake and they're all negative amounts. Did I miss something?,2024-08-19T14:49:26Z
+@albertcampillo,"Hi @jayzern, thanks a lot for your video, really valuable content!",2024-08-19T13:32:25Z
+@CosmicNomad,"This is such an amazing video @jayzern! The project taken was not overly complex but also not barebones and covered a lot of important stuff! Thanks for being thoughtful and including the code along link (else some of formatting issues would have bugged many newbies)! 
+ I think you should keep creating more videos as you are a good teacher. Only suggestion I have is may be include a bit more explanation, which will help beginners even more! Kudos!",2024-08-18T09:51:33Z
+@tianhockwoo3025,"Hello did anyone else face this error at Airflow after @32:50 
+
+Broken DAG: [/usr/local/airflow/dags/dbt-dag.py]
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.12/site-packages/cosmos/operators/base.py"", line 361, in __init__
+    self.full_refresh = full_refresh
+    ^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.12/site-packages/airflow/models/baseoperator.py"", line 1198, in __setattr__
+    if key in self.__init_kwargs:
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'DbtRunLocalOperator' object has no attribute '_BaseOperator__init_kwargs'. Did you mean: '_BaseOperator__instantiated'?
+
+please send help",2024-08-17T13:54:37Z
+@GeorgeNyamao,Thanks @jayzern. This tutorial is awesome. I will be recommending it to folks who struggle with connecting dbt with any database engine.,2024-08-15T22:44:47Z
+@SteynGun-n2u,"hi guys kindly help me out, does only snowflakes and dbt is enought are i have to learn hadoop, spark etc i am working as data analyst for last 1 year and planning to switch to de",2024-08-15T16:56:58Z
+@mohitupadhayay1439,AN ABSOLUTE GOLDMINE OF AN INFORMATION WHICH NOT AY UDEMY OR YOUTUBE TUTOR HAS PROVIDED YET!,2024-08-12T11:41:10Z
+@GladwinGracias,"My airflow cant find my dbt_project.yml file for some reason. 
+Below is the error 
+
+
+Broken DAG: [/usr/local/airflow/dags/dbt_dag.py]
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/converter.py"", line 214, in __init__
+    project_config.validate_project()
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/config.py"", line 207, in validate_project
+    raise CosmosValueError(f""Could not find {name} at {path}"")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /Users/gladwingracias_air/Gladwin/cogo-transform/datapulse_dag/dags/datapulse_transform/dbt_project.yml
+
+
+And this is the folder structure for datapulse_dag folder 
+
+.
+├── Dockerfile
+├── README.md
+├── airflow_settings.yaml
+├── dags
+│   ├── __pycache__
+│   │   ├── dbt_dag.cpython-311.pyc
+│   │   └── exampledag.cpython-311.pyc
+│   ├── dbt
+│   │   └── datapulse_transform
+│   │       ├── README.md
+│   │       ├── analyses
+│   │       ├── dbt_project.yml
+│   │       ├── logs
+│   │       │   └── dbt.log
+│   │       ├── macros",2024-08-08T05:44:40Z
+@ThiagoSilva-vh9fy,"couldn't run int_order_items.sql because it ruturns a strange error: it says: ""The selection criterion 'int_order_items.sql' does not match any enabled nodes"". And if aI run ""dbt run"" it says: "" unexpected '.' in line 1"" at 20:22",2024-08-05T16:41:03Z
+@Bolda92,"Hi, Thanks Jay for a very professional and informative tutorial.
+However I've encountered a very annoying issue:
+
+Database Error in model stg_tpch_orders (models/staging/stg_tpch_orders.sql)
+  002043 (02000): SQL compilation error:
+  Object does not exist, or operation cannot be performed.
+  compiled Code at target/run/dbt_snowflake_airflow_pipeline/models/staging/stg_tpch_orders.sql
+
+If I go to dbt_project.yml and remove the project name key from models it works but than fails at a later part that creates views for all the models instead of views for staging and tables for marts.",2024-08-02T13:28:54Z
+@AakashKumarDhal,"Error solved!!!!
+
+for anyone facing this error:
+Runtime Error
+  Database error while listing schemas in database ""dbt_db""
+  Database Error
+    250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Try the second method to update account name for your project inside profile.yml file.
+
+account_locator-account_name",2024-07-30T06:55:00Z
+@DivineSam-w6m,This video is like a gold mine for building a portfolio especially for someone starting out as a Data Engineer like me!... Manny Thanks and Kudos to you!.. Love from India,2024-07-24T20:49:36Z
+@pythonmathui3057,"I'm struggling with airflow connection to snowflake, can you make another video to elaborate it more?",2024-07-21T09:45:56Z
+@abdelaliamghar5123,90' it's a long Time ,2024-07-19T09:55:43Z
+@AwakenByMe,"WOW!! ,Thank you so much for this wonderful video, Please keep making dbt + airflow videos,
+
+I have one doubt, I can see that one task in airflow which is stg_tpch_orders have run + test  in your dag, But it is not showing up in mine,
+Have you added any tests on  stg_tpch_orders ? but maybe missed to show it into the video ?",2024-07-18T08:35:48Z
+@i-see-right-through-you,well done!  great tutorial!,2024-07-16T22:03:32Z
+@aiviet5497,I need a longer video. Please give me.,2024-07-16T12:31:51Z
+@dataengineermatheusbudin7011,"Hey, thanks for the project tutorial. i was wondering if there is the best way to deploy airflow on a cloud enviroment... I see a lot of Ec2 or EKS (kubernetes). But maybe i could work on ECS + Fargate? Which deploy method would you please recomend regarding a production scenario? (like beyond studies, thinking about a daily job task). Thank you mate",2024-07-13T18:07:28Z
+@AaronAsherRandall,"This is great! At what point would you need to dockerize the files though? Sorry, new to data engineering. Thank you!",2024-07-11T19:10:43Z
+@prabhatgupta6415,can u tell why have we used airflow since dbt cloud has feature to schedule the jobs?,2024-07-11T15:08:28Z
+@maikerodrigo4249,"Great tutorial, i've learning a lot thanks!",2024-07-09T12:29:24Z
+@Ikilledthebanks,Chad,2024-07-09T02:21:12Z
+@StephenRayner,You should check out Meltano,2024-07-07T12:14:24Z
+@srikantaghosh2386,"At 32:21, how did you copy the dbt folders to airflow project?",2024-07-04T18:20:46Z
+@JohnS-er7jh,Thanks very much for posting this! Definately earned another subscriber/viewer,2024-07-03T18:29:55Z
+@KieuOanhNguyen-ve6yk,"Thank you for your video. I'm stuck at the last step when connecting to Airflow though I followed every step,.it shows this error:
+Broken DAG: [/usr/local/airflow/dags/dbt_dag.py]
+Traceback (most recent call last):
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/converter.py"", line 211, in __init__
+    project_config.validate_project()
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/config.py"", line 206, in validate_project
+    raise CosmosValueError(f""Could not find {name} at {path}"")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /usr/local/airflow/dags/dbt/data_pipelin/dbt_project.yml
+
+Do you have any idea why I get this error? Thank you in advance!",2024-06-28T20:01:02Z
+@stephenarnold2343,"I materialized marts as tables but int_order_items, int_order_items_summary and fct_orders are created as views instead of tables. How do I convert these views to tables?",2024-06-28T00:09:09Z
+@梁喬萍,"love this! thanks for sharing this tutorial, very useful",2024-06-25T12:25:40Z
+@thainguyenbalamquang386,"Thank you, love your work",2024-06-21T03:04:41Z
+@saikoundinya9913,"Dude, where did you even mention about dbt_project.yml file, in part 2 of the video, you directly jump to vscode
+what are the details ??",2024-06-20T11:45:05Z
+@saurabhpandey1882,"Thanks Jayzern,! if I can be of some help for your next video let me know!",2024-06-20T03:51:43Z
+@JoseR-ui9vn,Thanks Jayzern,2024-06-16T19:03:10Z
+@Ali-xz4pc,Thanks for this awsome video. I followed this lab with biq query. let say we have a set of transformation with Big Query. what will be the code of dbt_dag.py? please provide a code for big query as well. I googled seems there is no big query provider and it is included in Airflow.,2024-06-15T03:19:26Z
+@giovannimaia9652,"Please post more videos, your videos are awesome and very instructive",2024-06-14T12:56:11Z
+@DagStylez,Excellent tutorial!!!,2024-06-11T03:17:52Z
+@user-tz2en6fe4x,"I have error with connection to snowflake. Could someone helps with that?
+here logs from terminal vsc
+PUKZALML0067:data_pipeline a.assylkhanov$ dbt run
+14:09:07  Running with dbt=1.8.2
+14:09:08  Registered adapter: snowflake=1.8.2
+14:09:08  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.data_pipeline.example
+14:09:08  Found 1 model, 3 data tests, 2 sources, 560 macros
+14:09:08  
+14:09:09  
+14:09:09  Finished running  in 0 hours 0 minutes and 1.05 seconds (1.05s).
+14:09:09  Encountered an error:
+Runtime Error
+  Database error while listing schemas in database ""dbt_db""
+  Database Error
+    250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+here logs from terminal
+
+nter a name for your project (letters, digits, underscore): data_pipeline
+00:05:39  
+Your new dbt project ""data_pipeline"" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+00:05:39  Setting up your profile.
+The profile data_pipeline already exists in /Users/a.assylkhanov/.dbt/profiles.yml. Continue and overwrite it? [y/N]: y
+Which database would you like to use?
+[1] snowflake
+
+(Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+
+Enter a number: 1
+account (https://<this_value>.snowflakecomputing.com): https://nc00801.southeast-asia.azure.snowflakecomputing.com
+user (dev username): Anuar
+[1] password
+[2] keypair
+[3] sso
+Desired authentication type option (enter a number): 1
+password (dev password): 
+role (dev role): dbt_role
+warehouse (warehouse name): dbt_wh
+database (default database that dbt will build objects in): dbt_db
+schema (default schema that dbt will build objects in): dbt_schema
+threads (1 or more) [1]: 10
+00:06:25  Profile data_pipeline written to /Users/a.assylkhanov/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+PUKZALML0067:~ a.assylkhanov$ cd data_pipeline
+PUKZALML0067:data_pipeline a.assylkhanov$ code .
+-bash: code: command not found",2024-06-09T15:03:51Z
+@montoyescoful,"Hi Jay. Question: Once you have created the Fact table, how does this process work if I run it again? Is it going to append new records and update the existing ones? Or is it going to drop and create the Fact table over again?",2024-06-08T21:39:05Z
+@AkashKandarkar,Amazingly explained 👌,2024-06-04T18:34:45Z
+@melvin9993,Dude this is so good :),2024-06-04T10:55:01Z
+@StanleySI,"Just wonder in the real world scenario, where are all raw data stored? In AWS s3?",2024-05-26T06:15:28Z
+@anikethdeshpande8336,"i'm new to snowflake, dbt and airflow, 
+this is awesome tutorial, got to learn a lot 
+thank you jayzern",2024-05-25T05:46:38Z
+@oludelehalleluyah6723,"I haven't a lot from this tutorial...
+
+Thank you",2024-05-23T08:50:24Z
+@kanishcktewatia597,20:13 it has to be where orders.order_key insted of on,2024-05-22T10:02:29Z
+@HasanCatalgol,"For the people who are struggling with data_tests error, just change the name of everything (including folders) test to datatests. Apply this to every single YAML file (Also profiles.yml and dbt_project.yml configurations)",2024-05-21T11:40:23Z
+@nadhasthirundhitan,"excellent video, thank you",2024-05-19T04:23:03Z
+@sanaomar2182,how do you know your username>? jayzer? like I went back to my profile but it did not work. where can I find the name of my user?,2024-05-17T13:24:49Z
+@sanaomar2182,"How did he stat? did he create a wroksheet? I tried it but it di not work, the very first steps ?? what arethey?",2024-05-17T13:13:48Z
+@reneporto-ai,"WOW! That's is amazing tutorial, thanks a lot.",2024-05-16T17:58:29Z
+@truongnguyen813,"I'm struggling within the step to load dbt data_pipeline, it did not show in the airflow dag. How could I be wrong, can you support?",2024-05-15T15:08:54Z
+@BishalKarki-pe8hs,100% worth it,2024-05-15T10:45:34Z
+@kmonish9119,I have been struggling with dbt and airflow for a long time. For some reason I could not connect the dots. Having some mixture of knowledge - I landed on this tutorial and it just glued all my scattered dots well. Thanks Jayzern!!! Really appreciate the efforts :),2024-05-13T11:03:07Z
+@ahmednasr3811,Thanks bro for your efforts ❤,2024-05-12T10:05:07Z
+@ilikethatboulder.thatisani5496,how much do you pay for your snowflake account??,2024-05-10T12:01:43Z
+@jeevankumarkondasingu34,Nice Explaination,2024-05-09T06:31:22Z
+@ozland7172,"Hello.. thanks for the tutorial. 
+I know airflow runs the tasks/dags however I cannot follow one thing; how do we determine the order of the action items at 35:36 within dbt (I believe it is determined on dbt side) since we have only one dag running on this example? I appreciate if anyone replies.",2024-05-09T06:18:51Z
+@anduamlaktadesse9284,so supportive and completing the project .,2024-05-03T19:37:10Z
+@CybersecYT,How could i get the project folder structure?,2024-04-27T23:51:49Z
+@MalvinSiew,"Hi Jay, thanks for the video. I'm having an issue connecting to Snowflake backend at the stage you first perform 'dbt run' @ 14:50 .
+
+This is the error I get:
+
+15:17:54  Encountered an error:
+Runtime Error
+  Database error while listing schemas in database ""dbt_db""
+  Database Error
+    250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+I've checked the profiles.yml file and all details are correct. Please help!",2024-04-24T15:22:07Z
+@rvmnet2112,"One question here, As we have dbt jobs feature available in dbt cloud and it is very easy to create job here then why it is need to use airflow?",2024-04-22T17:39:20Z
+@rakshavishwakarma1811,thank you so much it is 100% worth and useful... expect some more videos in detail.... like prod deployment through git and git interation with airflow,2024-04-17T02:16:22Z
+@kirankumar1290,Good,2024-04-15T01:42:15Z
+@MiguelMadrizGr8,"Are we in 2024? it all looks a lot like old century ... coding is necessary but come on, this is another story",2024-04-09T21:35:38Z
+@maryam4071,"hi, I would like to know about singular test, we want to check negative value in test, why we use the condition as positive?",2024-04-09T17:58:20Z
+@neosmith009,"Overall great, the airflow orchestration felt a bit clunky especially given that the source code had to be kept in the same directory.",2024-04-04T15:46:09Z
+@pavankumard5276,Need more content like this!!! Really amazing video. Just one suggestion I would like to make before diving into the coding part it would be better if you could provide a real world scenario and reference that while writing you code. Thanks,2024-03-29T15:53:07Z
+@kenneth1691,"Thank you so much for this, I've been trying to learn how to do this and you helped me solve this
+Do you have trainings!!",2024-03-29T13:53:45Z
+@diaconescutiberiu7535,"Awesome video! I already recommended this to my entire team. Please make more like this, they are extremely helpful.
+Idea for next video: dbt for Snowflake (again) but with Data Vault 2.0 modeling. I would love to see the logic behind creating dim and fact tables, how you define the stg files for creating the hubs/satellites/links.",2024-03-27T15:36:58Z
+@WiseSteps.D,"It will showing this error, when i opened my airflow interface,Any one know ? cause of this error?
+
+Broken DAG: [/usr/local/airflow/dags/my_cosmos_dag.py] Traceback (most recent call last):
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/dbt/graph.py"", line 209, in run_dbt_ls
+    stdout = run_command(ls_command, tmp_dir, env_vars)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.11/site-packages/cosmos/dbt/graph.py"", line 94, in run_command
+    raise CosmosLoadDbtException(f""Unable to run {command} due to the error:\n{details}"")
+cosmos.dbt.graph.CosmosLoadDbtException: Unable to run ['/usr/local/airflow/dbt_venv/bin/dbt', 'ls', '--output', 'json', '--project-dir', '/tmp/tmp05xx7bh7', '--profiles-dir', '/tmp/tmphcy039v2', '--profile', 'default', '--target', 'dev'] due to the error:
+[0m06:46:48  Running with dbt=1.7.10
+[0m06:46:49  Registered adapter: snowflake=1.7.2
+[0m06:46:49  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:46:51  Encountered an error:
+Compilation Error
+  Model 'model.cosmosproject.combined_bookings' (models/transform/combined_bookings.sql) depends on a node named 'bookings_1' which was not found",2024-03-26T06:49:52Z
+@fun2badult,Can you please post more videos like this? Really appreciate it. Helps me understand the Dbt/Snowflake/Airflow a lot,2024-03-25T20:18:02Z
+@fun2badult,Doing this for the second time and for some reason dbt is only creating views and not tables FML,2024-03-24T06:34:10Z
+@OmerNadler,is do i need to pay on astro ? if i want to use this for prod env,2024-03-23T15:44:39Z
+@mohammedvahid5099,Pleas make complete videos on DBT WITH snowflake migration project with real time scenario videos bro thnk u❤ nice explaind,2024-03-22T16:30:39Z
+@popalex,"Great video.
+I would love to see a complex ETL pipelines.",2024-03-22T15:17:03Z
+@PhanNguyen_010,thank you so much for this tutorial. hope you have more videos in the future,2024-03-19T09:20:34Z
+@cchotshot0292,"I have a question,. astro dev ps = webserver is running but on docker ps webserver is unhealthy., is there a problem with my config etc?
+
+ Env file "".env"" found. Loading...
+[+] Running 4/4
+ ⠿ Container dbt-dag_e88d72-postgres-1   Started                                                      0.4s
+ ⠿ Container dbt-dag_e88d72-scheduler-1  Started                                                      1.4s
+ ⠿ Container dbt-dag_e88d72-triggerer-1  Started                                                      1.3s
+ ⠿ Container dbt-dag_e88d72-webserver-1  Started                                                      2.1s
+
+
+Airflow is starting up!
+
+Error: there might be a problem with your project starting up. The webserver health check timed out after 1m0s but your project will continue trying to start. Run 'astro dev logs --webserver | --scheduler' for details.",2024-03-11T03:54:54Z
+@okkwok1753,"I am not sure why I cannot open the notes, can anyone help?",2024-03-10T14:09:44Z
+@NguyenTrung-dp8zy,"I really really really thank you for your video, I'm currently doing a project that uses sample data WorldWideImposter and WWI_DW for creating ELT pipelines, using airflow snowflake and azure blobs, but I am stuck at the logic transform of fact table of it.  Hope you make more video build ELT pl for this dataset, I would very much appreciate <3 starting to follow you from now.",2024-03-09T15:23:11Z
+@PhiNguyen-iz9go,"This code along session (starting from scratch with environment setup, codebase structure ...) is soooooooo helpful. Hope to see more examples like this. Keep up the work my man <3",2024-03-06T13:48:21Z
+@hiteshmohite7677,"hey, I have a small request
+can you please make a video on how to make use of pyspark efficiently in low spec system with huge amount of data",2024-03-05T08:19:37Z
+@nothan_nah,Thanks for sharing this dbt tutorial! It’s definitely super hot rn and useful to learn. 🎉,2024-02-29T19:44:38Z
+@projectveritas93,Great video and explanation. we need more videos from you.,2024-02-29T07:48:41Z
+@miguelhermar,Thanks Jay! Could you also upload into the Notion document the code for the dbt_dag.py file for the Airflow deployment? That's still missing 🙏🏻,2024-02-28T05:01:33Z
+@CSK-Studios,"Hi Jay, good one..am trying same way but getting below error "" 1 of 1 ERROR creating view model dbt_schema.stg_tpch_line_items................. [ERROR in 0.04s]
+06:17:33
+06:17:33  Finished running 1 view model in 2.02s.
+06:17:33  
+06:17:33  Completed with 1 error and 0 warnings:
+06:17:33
+06:17:33  Compilation Error in model stg_tpch_line_items (models\staging\stg_tpch_line_items.sql)
+06:17:33    'dict object' has no attribute 'type_string'
+06:17:33
+06:17:33    > in macro generate_surrogate_key (macros\sql\generate_surrogate_key.sql)
+06:17:33    > called by macro default__generate_surrogate_key (macros\sql\generate_surrogate_key.sql)
+06:17:33    > called by model stg_tpch_line_items (models\staging\stg_tpch_line_items.sql)""",2024-02-27T06:28:49Z
+@Dev_Zyoom,honestly never knew about dbt and glad to learn it here thank you,2024-02-27T00:55:53Z
+@peekknuf,"Extremely useful content, i especially liked live googling and debugging parts",2024-02-26T19:02:58Z
+@twickAttack,"Hey Jay, thank you for the video. I'd be happy to see you doing more ELT pipelines and focus on your thought's process ( I can watch longer format 1-2 hours) -  why you do things in that way, why is it important and whatnot; and you can throw some explainers to anything else you do and the reason behind it. I think senior DE and others with experience do things bit automatically and it takes time for the newbies to pick up on those skills. So, your thought process for doing things instead of just doing the things is priceless for anyone watching, including me. Appreciate your video, dude :)",2024-02-26T17:25:03Z
+@prasadatluri,Great video Jay,2024-02-26T15:41:55Z
+@thetrangia1091,thank you very much,2024-02-26T14:59:14Z
