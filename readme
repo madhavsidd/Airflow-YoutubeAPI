@@ -22,15 +22,9 @@ To run this project locally:
 
 For detailed instructions, see the [Setup Guide](./docs/setup_guide.md).
 
-
 # Why I Started This Project
 
-I came across a YouTube tutorial that taught me how to create a simple data pipeline. After completing the tutorial, I decided to give back to the YouTuber who helped me learn so much. I realized I could build a simple ETL pipeline to analyze YouTube comments using the Google Data API.
-
 This project was born out of the desire to gather actionable insights from comments that could help content creators enhance their videos.
-
-Check out the tutorial here: [Twitter Data Pipeline using Airflow for Beginners](https://www.youtube.com/watch?v=q8q3OFFfY6c&t=1362s).
-
 
 # API Setup
 
@@ -47,7 +41,6 @@ Google provides a powerful API for interacting with YouTube data. I used the [Yo
 ```python
 import os
 import googleapiclient.discovery
-
 
 ---
 
@@ -76,8 +69,6 @@ Once the YouTube API was set up, I used it to extract comments from the video. B
   ]
 }
 
-
-
 ---
 
 ### `docs/data_transformation.md`
@@ -89,19 +80,15 @@ After extracting the comments, I focused on cleaning and structuring the data. T
 1. Parsing the JSON response to extract only relevant fields.
 2. Organizing the data into a pandas DataFrame for easier analysis and export to a CSV file.
 
-
 ---
 
 ### `docs/data_loading.md`
 
-```markdown
 # Data Loading
 
 The final step in the pipeline was loading the extracted and transformed data into a CSV file.
 
 I used Pandas to write the data into a well-structured CSV, which could be used for further analysis or shared with others.
-
-
 
 ---
 
