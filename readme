@@ -22,6 +22,7 @@ To run this project locally:
 
 For detailed instructions, see the [Setup Guide](./docs/setup_guide.md).
 
+
 # Why I Started This Project
 
 I came across a YouTube tutorial that taught me how to create a simple data pipeline. After completing the tutorial, I decided to give back to the YouTuber who helped me learn so much. I realized I could build a simple ETL pipeline to analyze YouTube comments using the Google Data API.
@@ -29,6 +30,7 @@ I came across a YouTube tutorial that taught me how to create a simple data pipe
 This project was born out of the desire to gather actionable insights from comments that could help content creators enhance their videos.
 
 Check out the tutorial here: [Twitter Data Pipeline using Airflow for Beginners](https://www.youtube.com/watch?v=q8q3OFFfY6c&t=1362s).
+
 
 # API Setup
 
@@ -46,32 +48,11 @@ Google provides a powerful API for interacting with YouTube data. I used the [Yo
 import os
 import googleapiclient.discovery
 
-def main():
-    api_service_name = "youtube"
-    api_version = "v3"
-    DEVELOPER_KEY = "YOUR_API_KEY"
-
-    youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey=DEVELOPER_KEY)
-
-    request = youtube.commentThreads().list(
-        part="snippet, replies",
-        videoId="YOUR_VIDEO_ID"
-    )
-    response = request.execute()
-
-    print(response)
-
-if __name__ == "__main__":
-    main()
-
-
 
 ---
 
-### 4. **Data Extraction (`data_extraction.md`)**
+### `docs/data_extraction.md`
 
-```markdown
 # Data Extraction
 
 Once the YouTube API was set up, I used it to extract comments from the video. Below is an example of how a comment looks:
@@ -99,9 +80,8 @@ Once the YouTube API was set up, I used it to extract comments from the video. B
 
 ---
 
-### 5. **Data Transformation (`data_transformation.md`)**
+### `docs/data_transformation.md`
 
-```markdown
 # Data Transformation
 
 After extracting the comments, I focused on cleaning and structuring the data. The main transformation steps included:
@@ -109,17 +89,10 @@ After extracting the comments, I focused on cleaning and structuring the data. T
 1. Parsing the JSON response to extract only relevant fields.
 2. Organizing the data into a pandas DataFrame for easier analysis and export to a CSV file.
 
-```python
-import pandas as pd
-
-comments_df = pd.DataFrame(comments)
-comments_df.to_csv('youtube_comments.csv', index=False)
-
-
 
 ---
 
-### 6. **Data Loading (`data_loading.md`)**
+### `docs/data_loading.md`
 
 ```markdown
 # Data Loading
@@ -128,16 +101,12 @@ The final step in the pipeline was loading the extracted and transformed data in
 
 I used Pandas to write the data into a well-structured CSV, which could be used for further analysis or shared with others.
 
-```python
-comments_df.to_csv('youtube_comments.csv', index=False)
-
 
 
 ---
 
-### 7. **Using ChatGPT for Analysis (`chatgpt_analysis.md`)**
+### `docs/chatgpt_analysis.md`
 
-```markdown
 # Using ChatGPT for Analysis
 
 Once I had the data in a CSV format, I wanted to analyze it further. For this, I turned to ChatGPT.
