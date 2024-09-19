@@ -1,4 +1,4 @@
-# Twitter Data Analysis using Airflow
+# Youtube Video Analysis using Airflow
 
 This project automates the extraction and analysis of YouTube comments using an ETL pipeline built with Apache Airflow. The goal is to gather insights from the comments and help YouTube creators improve their content.
 
